@@ -9,5 +9,7 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 8000; //environment var!
 
 app.listen(PORT, () => {
-    console.log('app is listening on port ' + PORT);
+    console.log(`app is listening on port ${PORT}`);
 });
+
+//heroku is evil
