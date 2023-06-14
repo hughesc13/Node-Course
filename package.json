@@ -4,6 +4,9 @@
   "description": "showing how to build apps with node.js",
   "main": "fibonacci.js",
   "scripts": {
+    "test": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register",
+    "test:watch": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register --watch",
+    "coverage": "nyc --reporter=lcov --reporter=text npm run test",
     "start": "node hosted-server.js",
     "say-hello": "node ./hello-world.js",
     "fib": "node ./fibonacci.js"
@@ -25,8 +28,11 @@
     "socket.io-client": "^4.6.2"
   },
   "devDependencies": {
+    "@babel/register": "^7.22.5",
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "nyc": "^15.1.0",
+    "supertest": "^6.3.3"
   }
 }
