@@ -1,0 +1,30 @@
+{
+  "name": "node-course",
+  "version": "1.0.0",
+  "description": "showing how to build apps with node.js",
+  "main": "fibonacci.js",
+  "scripts": {
+    "start": "node hosted-server.js",
+    "say-hello": "node ./hello-world.js",
+    "fib": "node ./fibonacci.js"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [
+    "fibonacci"
+  ],
+  "author": "Claire Hughes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "koa": "^2.14.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.3.5",
+    "socket.io": "^4.6.2",
+    "socket.io-client": "^4.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
